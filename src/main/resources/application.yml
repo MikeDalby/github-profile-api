@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: github-profile-api
+  cache:
+    # caffeine gives us a bit more control than the built-in Spring Cache
+    type: caffeine
+    caffeine:
+      spec: maximumSize=500,expireAfterWrite=5m
+
+github:
+  api:
+    url: ${GITHUB_API_URL:https://api.github.com}
