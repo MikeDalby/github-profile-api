@@ -59,9 +59,6 @@ This API provides JSON-formatted error responses. Typical error responses includ
 - `404 Not Found`: When the specified GitHub user does not exist.
 - `500 Internal Server Error`: For unexpected server errors.
 
-# Architectural Decisions
-1. The GitHub `https://api.github.com/users/${user}/repos` endpoint
-
 # Development
 
 ## Running
