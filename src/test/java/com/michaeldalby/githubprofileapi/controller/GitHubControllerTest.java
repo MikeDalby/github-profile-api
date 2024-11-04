@@ -5,7 +5,6 @@ import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.michaeldalby.githubprofileapi.dto.UserProfileResponseDTO;
 import com.michaeldalby.githubprofileapi.service.GitHubService;
 import java.util.List;
@@ -21,8 +20,6 @@ public class GitHubControllerTest {
   @MockBean private GitHubService gitHubService;
 
   @Autowired private MockMvc mockMvc;
-
-  @Autowired private ObjectMapper objectMapper;
 
   @Test
   void getUserProfileReturnsSuccess() throws Exception {

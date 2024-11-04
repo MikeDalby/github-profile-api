@@ -40,7 +40,7 @@ public class GitHubService {
         CompletableFuture.supplyAsync(() -> gitHubApiClient.getUserRepositories(username));
 
     try {
-      // Wait for both futures to complete, similar to Promise.all.
+      // Wait for both futures to complete, similar to Promise.all().
       // The join() method will wrap the errors we really care about in
       // a CompletionException, so we'll unpack it immediately.
       try {
