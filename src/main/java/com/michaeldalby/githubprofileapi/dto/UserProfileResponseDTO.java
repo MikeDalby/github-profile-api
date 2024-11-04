@@ -20,9 +20,7 @@ public class UserProfileResponseDTO {
   private final String created_at;
   private final List<Repo> repos;
 
-  /**
-   * Inner static class representing a GitHub repository associated with the user.
-   */
+  /** Inner static class representing a GitHub repository associated with the user. */
   @Data
   public static class Repo {
     private final String name;
