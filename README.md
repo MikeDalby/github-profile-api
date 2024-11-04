@@ -1,6 +1,10 @@
 # github-profile-api
 The Github Profile API takes a GitHub username as a path parameter to a GET request and returns information about that user and their Repositories as a JSON response.
 
+## Video Walkthroughs
+[API Usage](https://www.loom.com/share/0693304ee0b54ad6b309681a4a80eab8?sid=58249c57-385e-4836-a2e4-c9e06cdc12f2)
+[Code Walkthrough](https://www.loom.com/share/c17f926470384c54b49c747339166660?sid=5554989a-7f2f-4ab8-9108-d65a1a9e6a64)
+
 ## Example Usage
 ### Request
 `GET http://localhost:8080/users/octocat`
